@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS - Conceito</title>
+</head>
+<body>
+  <h1>CSS - Conceitos</h1>
+  <p>CSS - Cascading Style Sheets, ou "Folhas de Estilo em Cascata", permite a estilização do conteúdo HTML. Seu foco está nos aspectos visuais (estilização, design, formatação).</p>
+  <p>Assim como a HTTML, CSS não é uma linguagem de programção, também é escrito de forma declarativa. Permite a alteração de cores, estilos de texto e posicionamento dos elementos. </p>
+  <p>Pode ser definido no código HTML de 3 maneiras:</p>
+  <ul>
+    <li>Atributo style (inline)</li>
+    <li>Tag style (colocada no cabeçalho / head)</li>
+    <li>Arquivo externo (melhor , inclusive pela possibilidade de reuso)</li>
+  </ul>
+  <h2>Sintaxe</h2>
+  <p>A sintaxe básica de um cósigo CSS é:</p>
+  <p>h1 (chamado de seletor) {<br>
+    padding: 10px; (declação) <br>
+    margin (propriedade): 0 auto; <br>
+    color: blue (valor); <br>
+  } <br>
+  </p>
+  <p>Perceba como primeiro definimos qual estrutura será editada, através do seletor. Depois abrimos um bloco usando chaves, e dentro desse bloco ficará os comandos. A linha inteira de comando é chamada de declaração. O atributo que será alterado chamamos de "propriedade", e o valor atribuído a essa propriedade, chamamos de "valor". Repare também que toda linha de comando termina com o uso de ponto-e-vírgula (;)</p>
+  <p>Quando é declarado dessa forma, toda a tag h1 que existir na página html que receber essa edição terá essas mesmas propriedades.</p>
+  <p>Para fazermos uma edição de forma satisfatória, temos que diferenciar 3 conceitos:</p>
+  <ul>
+    <li>Elemento - estiliza todos os elementos conforme o identificador. Representado pelo nome da tag</li>
+    <li>Classe - estiliza todos os elementos que possuam o atributo classe (<strong>class</strong>). Representando no CSS por um ponto (.)</li>
+    <li>Id - estiliza o elemento que possua o id especificado (atributo id). Geralmente deve ser feito para um único elemento. Representado no CSS por uma hashtag (#) </li>
+  </ul>
+  <h2>Algumas Propriedades:</h2>
+  <ul>
+    <li>padding - margem interna</li>
+    <li>margin - margem externa, e também é uma das formas de centralizar o elemento</li>
+    <li>color - definição da cor do texto</li>
+    <li></li>
+  </ul>
+  <h2>CSS Reset</h2>
+  <p>É uma técnica para remover o CSS padrão dos navegadores, o que auxilia na padronização visual do site. Para que funcione, deve ser feita antes de qualquer outra declaração CSS. Existem diversas ténicas para isto, a mais usada é a inserção do arquivo reset.css criada por Eric Meyer.</p>
+  <p>Os frameworks geralmente já vem com isso embutido como padrão.</p>
+</body>
+</html>

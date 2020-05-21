@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Conceitos</title>
+</head>
+<body>
+  <h1>HTML - Conceitos</h1>
+  <p>Agora que já conhecemos a origem da linguagem HTML, é hora de conhecer melhor seus fundamentos, conceitos e aplicações.</p>
+  <p>A primeira coisa que convem destacar é que HTML <strong>não</strong> é uma linguagem de programção, mas sim uma linguagem de marcação, ela estrutura o conteúdo. Toda a parte de programção que ocorre numa pagina web (interatividade) vem do <strong>JavaScript</strong>. Um documento HTML é escrito de forma declarativa: a gente não precisa explicar o <em>como</em> deve ser feito, isso o navegador resolve pra gente.</p>
+  <p>A idéia do HTML é compor elementos, que por sua vez, são determinados por <em>tags</em>. E essas tags podem conter atributos que alteram o comportamento desse elemento. As maioria das tags precisam de abertura e fechamento, e todas tags que agem dessa forma são dependentes do seu <em>conteúdo</em>. Em tags que funcionam por abertura e fechamamento, o conteúdo fica entre as tags e será alterado pelas suas definições.</p>
+  <p>Exemplo de tag com abertura de fechamento: tag de parágrafo (&lt;p&gt;). Que funciona da seguinte maneira: <br>&lt;p&gt;conteúdo que será modificado por essa tag&lt;/p&gt;</p>
+  <p>Quando uma tag não tem conteúdo (ou seja, tem apenas atributos) ela não é fechada. Como exemplo, temos a tag de imagem (&lt;img&gt;). Que funciona da seguinte forma: <br> &lt;img src="endereço.da.imagem" alt="texto.alternativo.que.aparecerá.caso.a.imagem.não.carregue"&gt;<br>Pode conter outros atributos, dependendo da necessidade.</p>
+  <p>Todos os atributos devem conter <strong>valores</strong>.</p>
+  <p>A importância do HTML é <strong>semântica</strong>, ou seja, de significado, de descrever o conteúdo. Portanto toda parte de estilo e formatação deve ser delegada às CSS. No início a linguagem HTML era responsável por essas duas instâncias, mas isso acabou comprometendo o desenvolvimento web, e decidiu-se por separar essas duas instâncias. Ainda existem tags remanecentes que se preocupam exclusivamente com questão de estilo, mas elas não devem ser usadas. Por exemplo, antigamente existia a tag &lt;b&gt; que deixava o texto em negrito. Hoje se usa a tag &lt;strong&gt;, embora o efeito visual possa ser o mesmo, o foco da tag strong é informar ao navegador que aquele(s) termos(s) possuem destaque dentro do texto, o que pode facilitar em mecanismos de buscas.</p>
+  <p>Para ter acesso a uma documentação mais detalhada, diretamente do site da mozilla, basta <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">clicar aqui</a>.</p>
+  <p>Outro fator que faz ser relvante a êfase semântica na HTML são os leitores utilizados por deficientes visuais. Esses leitores que transliteram seu site em forma de áudio lêem HTML. Por isso é importante que toda parte de estilo seja feita via CSS, para evitar complicações nessa transposição.</p>
+  <p>Principais tags HTML de marcação:</p>
+  <ul>
+    <li>&lt;p&gt; &rarr; parágrafo</li>
+    <li>&lt;h1&gt; a &lt;h6&gt ;&rarr; títulos</li>
+    <li>&lt;span&gt; &rarr; trechos a serem destacados</li>
+    <li>&lt;div&gt; &rarr; divisão da página</li>
+    <li>&lt;img&gt; &rarr; imagem</li>
+    <li>&lt;table&gt; &lt;tr&gt; &lt;td&gt; &rarr; definição de tabela, linhas e colunas</li>
+    <li>&lt;ul&gt; &lt;li&gt; &rarr; lista, itens da lista</li>
+    <li>&lt;strong&gt; &rarr; destaque (efeito visual, <strong>negrito</strong>)</li>
+    <li>&lt;em&gt; &rarr; ênfase (efeito visual, <em>itálico</em>)</li>
+    <li>&lt;a&gt; &rarr; âncoras (links)</li>
+</ul>
+<p>Os títulos têm ordem de importância, o que também influencia em dispositivos de busca. H1 é o título principal, a recomendação é que haja apenas um por página. H6 é o título de menor relevância, os outros são uma escala entre estes.</p>
+<p>Span é uma tag <strong>não-visual</strong>, mas que destaca o texto, e posteriormentes você consegue aplicar CSS com mais facilidade no trecho destacado.</p>
+<p>A div é semelhante ao span, mas ela é um elemento <strong>conteiner</strong>, dentro dela você tem outras tags, enquanto a span só tem o conteúdo textual.</p>
+<p>A tag ul representa listas <strong>não-ordenadas</strong>, para listas ordenadas usamos a tag &lt;ol&gt;</p>
+<h2>Caminho absoluto x Caminho Relativo</h2>
+<p>O caminho absoluto deve ser evitado, pois é definido o local <strong>absoluto</strong> em que o recurso (arquivo, imagem, etc) se encontra em disco , por isso, em geral, só funciona no ambiente original do site/página.</p>
+<p>Já o caminho relativo define o local <strong>relativo</strong> do recurso, ou seja, onde esse recurso está <strong>em relação</strong> aos demais arquivos do projeto. Utilizando sempre o caminho relativo, as referências ao seu projeto funcionarão em qualquer ambiente.</p>
+<p>Exemplo de caminho absoluto: <em>C:\Users\Joao\Documents\Projeto-site</em></p>
+<p>Exemplo de caminho relativo: <em>imagens/internetantigamente.jpeg</em>(nesse casim dentro da pasta em que o index do seu site se localiza, existe uma outra pasta chamada "imagens" e dentro dela está o arquivo solicitado)</p>
+
+
+
+</body>
+</html>

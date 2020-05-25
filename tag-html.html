@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tags HTML</title>
+    <title>Edição HTML e CSS</title>
   </head>
   <body>
     <div id="interface">
-      <h1>Conhecendo as Tag e comandos HTML</h1>
+      <h1>Conhecendo as edições HTML e CSS</h1>
       <p>
         Nessa sessão farei uma listagem com descrição de todas as tags,
         caracteres especiais e emojis. Sessão de consulta
@@ -41,12 +41,38 @@
           muito útil para url de sites muito grandes, para não comprometer a
           formatação, colocar a tag após cada ponto
         </li>
-        <li>&lt; &gt; &rarr;</li>
-        <li>&lt; &gt; &rarr;</li>
-        <li>&lt; &gt; &rarr;</li>
-        <li>&lt; &gt; &rarr;</li>
-        <li>&lt; &gt; &rarr;</li>
-        <li>&lt; &gt; &rarr;</li>
+        <li>
+          &lt;del&gt; &rarr; efeito riscado sobre a palavra. E indica
+          semanticamente que foi um texto deletado.Exemplo:
+          <del>riscado</del>
+        </li>
+        <li>
+          &lt;span&gt; &rarr; utilizada para formatar pequenos techos de texto
+        </li>
+        <li>
+          &lt;sup&gt; &rarr; sobrescrever o texto. Exemplo
+          <sup>sobrescrito</sup>
+        </li>
+        <li>
+          &lt;sub&gt; &rarr; subscreve o texto. Exemplo <sub>subscrito</sub>
+        </li>
+        <li>
+          &lt;code&gt; &rarr; tag específica para formatar código. Não altera a
+          aparência, mas informa para o navegador que aquilo faz referência a um
+          trecho código de programação.
+        </li>
+        <li>
+          &lt;pre&gt; &rarr; tudo que estiver entre essa tag será considerado
+          como pré-formatado. Utilando juntamente com a tag code, é ideal para
+          postar código. Exemplo de um código em C++ <br />
+          <pre><code>
+            #include &lt;iostrem&gt;
+            int main(){
+                count <<"Olá, Mundo!";
+                return 0;
+            }
+          </code></pre>
+        </li>
         <li>&lt; &gt; &rarr;</li>
         <li>&lt; &gt; &rarr;</li>
         <li>&lt; &gt; &rarr;</li>
@@ -55,23 +81,156 @@
 
       <h2>Caracteres especiais</h2>
       <p>
-        todos os códigos a seguir, para funcionarem, precisam de um ponto e
-        vírgula após eles (;)
+        todos os códigos a seguir, para funcionarem, precisam ser escritos tudo
+        junto
       </p>
       <ul>
         <li>
-          &nbsp &rarr; non-breacking space - permite o uso de mais espaçamento
-          lateral (em html, o navegador só lê um espaçamento no máximo, se você
-          aperta espaço várias vezes, só a primeira será lida). Cada &nbsp
-          resulta em um espaço
+          & nbsp ; &rarr; non-breacking space - permite o uso de mais
+          espaçamento lateral (em html, o navegador só lê um espaçamento no
+          máximo, se você aperta espaço várias vezes, só a primeira será lida).
+          Cada &nbsp resulta em um espaço
         </li>
         <li>
-          &shy &rarr; soft hyphen; uso parecido com a tag wbr, com a diferença
-          que quando quebra a palavra, cria um hífem, muito útil para palavras
-          muito grandes.
+          & shy ; &rarr; soft hyphen; uso parecido com a tag wbr, com a
+          diferença que quando quebra a palavra, cria um hífem, muito útil para
+          palavras muito grandes.
         </li>
-        <li></li>
+        <li>& lt ; &rarr; símbolo de menor &lt;</li>
+        <li>& gt ; &rarr; símbolo de maior &gt;</li>
+        <li>& le ;&rarr; símbolo menor ou igual &le;</li>
+        <li>& ge ; &rarr; símbolo maior ou igual &ge;</li>
+        <li>& pound ; &rarr; símbolo de libra (monetário) &pound;</li>
+        <li>& yen ; &rarr; símbolo de yen (monetário) &yen;</li>
+        <li>& euro ; &rarr; símbolo de euro (monetário) &euro;</li>
+        <li>& copy ; &rarr; símbolo de copyright &copy;&copy;</li>
+        <li>& reg ; &rarr; símbolo marca registrada &reg;</li>
+        <li>& trade ; &rarr; símbolo trademark &trade;</li>
+        <li>& permil ; &rarr; símbolo do permil &permil;</li>
+        <li>& sun ; &rarr; símbolo de soma &sum;</li>
+        <li>& infin ;&rarr; símbolo do infinito &infin;</li>
+        <li>& times ;&rarr; símbolo de multiplicação &times;</li>
+        <li>& plusmn ;&rarr; símbolo de mais ou menos &plusmn;</li>
+        <li>
+          & oplus ; &rarr; símbolo de mais dentro de uma circunferência &oplus;
+        </li>
+        <li>& radic ; &rarr; símbolo de raiz quadrada &radic;</li>
+        <li>& ne ; &rarr; símbolo de diferente &ne;</li>
+        <li>& delta ; &rarr; símbolo de delta minúsculo &delta;</li>
+        <li>& Delta ; &rarr; símbolo de delta maiúsculo &Delta;</li>
+        <li>& lambda ; &rarr; símbolo de lambda minúsculo &lambda;</li>
+        <li>& Lambda ; &rarr; símbolo de lambda maiúsculo &Lambda;</li>
+        <li>& omega ; &rarr; símbolo de omega minúsculo &omega;</li>
+        <li>& Omega ; &rarr; símbolo de omega maiúsculo &Omega;</li>
+        <li>& phi ; &rarr; símbolo de phi minúsculo &phi;</li>
+        <li>& Phi ; &rarr; símbolo de phi maiúsculo &phi;</li>
+        <li>& larr ; &rarr; símbolo de seta pra esquerda &larr;</li>
+        <li>
+          & Larr ; &rarr; símbolo de seta pra esquerda com duas pontas &Larr;
+        </li>
+        <li>& rarr ; &rarr; símbolo de seta pra direita &rarr;</li>
+        <li>
+          & Rarr ; &rarr; símbolo de seta pra direita com duas pontas &Rarr;
+        </li>
+        <li>& harr ; &rarr; símbolo de seta pra os dois lados &harr;</li>
+        <li>& uarr ; &rarr; símbolo de seta pra cima &uarr;</li>
+        <li>& Uarr ; &rarr; símbolo de seta pra cima com duas pontas &Uarr;</li>
+        <li>& darr ; &rarr; símbolo de seta pra baixo &darr;</li>
+        <li>
+          & Darr ; &rarr; símbolo de seta pra baixo com duas pontas &Darr;
+        </li>
+        <li>& spades ; &rarr; símbolo naipe de espadas &spades;</li>
+        <li>& clubs ; &rarr; símbolo naipe de paus&clubs;</li>
+        <li>& hearts ; &rarr; símbolo naipe de copas &hearts;</li>
+        <li>& diams ; &rarr; símbolo naipe de ouros &diams;</li>
+        <li>& ; &rarr; símbolo</li>
+        <li>& ; &rarr; símbolo</li>
       </ul>
+      <h2>Edição CSS</h2>
+      <p>
+        O CSS possui várias opções de edicação de texto, imagem, background,
+        etc. Não seria possível dar conta de tudo numa única página, mas vamos
+        abordar alguns mais utilizados
+      </p>
+      <h3>text-decoration</h3>
+      <p>Edita diretamente a parência do texto, pode receber os atributos:</p>
+      <ul>
+        <li>
+          underline &rarr; sublinha o texto.
+          <span style="text-decoration: underline;">Exemplo</span>
+        </li>
+        <li>
+          overline &rarr; faz um traço cima do texto.
+          <span style="text-decoration: overline;">Exemplo</span>
+        </li>
+        <li>
+          line-through &rarr; risca o texto
+          <span style="text-decoration: line-through;">Exemplo</span>
+        </li>
+        <li>
+          none &rarr; gera um texto sem decoração alguma. Importante para se
+          livrar de uma herança de característica.
+          <span style="text-decoration: none;">Exemplo</span>
+        </li>
+      </ul>
+      <h3>font-weight</h3>
+      <p>Gerencia o negrito. Pode receber os atributos:</p>
+      <ul>
+        <li>
+          normal &rarr; texto sem formatação alguma de negrito.<span
+            style="font-weight: normal;"
+            >Exemplo</span
+          >
+        </li>
+        <li>
+          bold &rarr; negrito tradicional.<span style="font-weight: bold;"
+            >Exemplo</span
+          >
+        </li>
+        <li>
+          bolder &rarr; negrito ligeramente mais intenso.<span
+            style="font-weight: bolder;"
+            >Exemplo</span
+          >
+        </li>
+        <li>
+          definir &rarr; você pode digitar um valor entre 100 e 900 para definir
+          a intensidade do negrito (sendo 400 a configuração padrão e 900 a
+          intensidade máxima, e qualquer valor abaixo de 400 uma formatação
+          ligth).<span style="font-weight: 900;">Exemplo 900</span> e
+          <span style="font-weight: 100;">Exemplo 100</span>
+        </li>
+      </ul>
+      <h3>text-align</h3>
+      <p>
+        Esse parâmetro é responsável pelo alinhamento do texto. Pode receber os
+        atributos:
+      </p>
+      <ul>
+        <li>center &rarr; centraliza o texto.</li>
+        <li>left &rarr; valor padrão: alinha o texto à esquerda</li>
+        <li>rigth &rarr; alinha o texto à direita</li>
+        <li>justify &rarr; justifica o texto</li>
+      </ul>
+      <h2>text indent</h2>
+      <p>
+        Responsável pela indentação do texto, ou seja, quando existe um
+        parágrado e você coloca esse perâmetro, a primeira linha será tabulada.
+        Seu atributo é um forma de px, pt, etc. Segue o exemplo de um parágrafo
+        justificado e indentado:
+      </p>
+      <p style="text-align: justify; text-indent: 50px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde hic ea
+        maiores quia nostrum dolorum ullam commodi sapiente odit sunt, error,
+        illum saepe suscipit iste facilis distinctio. Sunt, assumenda vitae.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+        accusantium aut doloribus. Iusto id labore in recusandae animi tempora
+        omnis reprehenderit minus. Nostrum rerum quae minima inventore beatae
+        debitis nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Molestias, quos. Magni temporibus animi quam eaque consectetur!
+        Voluptatibus distinctio quisquam delectus voluptates veniam molestias
+        doloribus animi, pariatur ab temporibus vero aut.
+      </p>
     </div>
   </body>
 </html>
